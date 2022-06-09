@@ -1,6 +1,17 @@
 <template>
 
 <div class="row justify-content-center">
+
+      <nav class="breadcrumbs">
+        <router-link to="/">
+            {{this.reci["breadcrumbs"][0][props]}}
+        </router-link>
+        >
+        <router-link to="/dodajOglas">
+            {{this.reci["breadcrumbs"][1][props]}}
+        </router-link>
+      </nav>
+
         <div class="col-sm-8 ">
             <form class="align-self-center text-start needs-validation" @submit.prevent="postaviOglas()">
                 <div class="mb-3">
@@ -68,7 +79,6 @@ export default {
             var phoneRegex = /^\d{10}$/
             if( this.opis =="" || this.kontakt=="" || this.naziv==""){
                 if(this.opis ==""){
-
                     this.greskaOpis = 1
                 }
                 if(this.kontakt =="" || !this.kontakt.match(phoneRegex)){

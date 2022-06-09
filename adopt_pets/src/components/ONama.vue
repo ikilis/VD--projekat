@@ -1,5 +1,17 @@
 <template>
+
+
 <div class="row">
+      <nav class="breadcrumbs">
+        <router-link to="/">
+            {{this.reci["breadcrumbs"][0][props]}}
+        </router-link>
+        >
+        <router-link to="/onama">
+            {{this.reci["breadcrumbs"][1][props]}}
+        </router-link>
+      </nav>
+
       <div class="col-sm-12 prviRed pb-0 mb-0">
           <h1> {{this.reci["naslov"][props]}} </h1>
           <img class="w-10 img-fluid align-self-start" id="slika" alt="Vue logo" src="../assets/Onama.png">

@@ -14,6 +14,10 @@ let reci =[
     },
     {
         component: "DodajOglas",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Dodaj oglas", "Add post"],
+        ],
         greskaNaziv:["Назив је обавезан","Title is required"],
         greskaOpis:["Опис је обавезан","Description is required"],
         greskaTelefon:["Мора бити десетоцифрен","Must be 10 digit number"],
@@ -29,6 +33,20 @@ let reci =[
         kontakt:["Молимо контактирајте","Please contact"],
         komentarPlaceHolder: ["Оставите Ваш коментар","Leave comment"],
         dugme:["Додај","Add"]
+    },
+    {
+        component: "MojNalogOglasi",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Moji oglasi", "My posts"],
+        ],
+    },
+    {
+        component: "Oglasi",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Oglasi", "Posts"],
+        ],
     },
     {
         component: "MojNalogNavigation",
@@ -47,6 +65,9 @@ let reci =[
     },
     {
         component: "Pocetna",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+        ],
         novosti:["Новости ","News"],
         info:["више инфо","more info"],
         pomoc:["Помози нам","Help us"],
@@ -66,6 +87,10 @@ let reci =[
     },
     {
         component:"ONama",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["O nama", "About us"],
+        ],
         naslov:["Сазнај више о нама","Get to know us"],
         levaKolona:[
             "Година виђамо животиње свуда око нас угрожене животиње, ми смо се фокусирали да помогнемо\

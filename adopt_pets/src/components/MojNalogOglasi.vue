@@ -1,5 +1,15 @@
 <template>
     <div class="row">
+      <nav class="breadcrumbs">
+        <router-link to="/">
+            {{this.reci["breadcrumbs"][0][props]}}
+        </router-link>
+        >
+        <router-link to="/mojiOglasi">
+            {{this.reci["breadcrumbs"][1][props]}}
+        </router-link>
+      </nav>
+
         <div class="col-sm-2 bg-white">
             <MojNalogNavigation :props="this.props" />
         </div>
@@ -19,6 +29,7 @@
 </template>
 
 <script>
+import reci from '../data/jezici.js'
 import MojNalogNavigation from "./MojNalogNavigation.vue"
 // import OglasStavka from "./OglasStavka.vue"
 export default {
@@ -29,7 +40,8 @@ export default {
     },
     data(){
         return{
-            mojiOglasi:[]
+            mojiOglasi:[],
+            reci: [],
         }
     },
     props:[
@@ -41,6 +53,7 @@ export default {
         this.mojiOglasi = sviOglasi.filter(function(oglas){
                 return oglas.username == mojeIme
         })
+        this.reci = reci.find(rec=>rec.component == "MojNalogOglasi")
     },
     methods:{
         clickedX(oglasId){

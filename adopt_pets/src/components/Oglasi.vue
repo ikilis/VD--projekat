@@ -1,5 +1,15 @@
 <template>
+      <nav class="breadcrumbs">
+        <router-link to="/">
+            {{this.reci["breadcrumbs"][0][props]}}
+        </router-link>
+        >
+        <router-link to="/oglasi">
+            {{this.reci["breadcrumbs"][1][props]}}
+        </router-link>
+      </nav>
     <div class="container">
+
     <div id="oglasi" class="row justify-content-center">
         <OglasStavka
                 v-for="oglas in oglasi" :key="oglas.id"
@@ -18,6 +28,7 @@
 
 // Ubaci posle lepo sve oglase
 import OglasStavka from "./OglasStavka.vue"
+import reci from '../data/jezici.js'
 
 export default {
     name: "Oglasi",
@@ -26,7 +37,8 @@ export default {
     },
     data(){
         return{
-            oglasi:[]
+            oglasi:[],
+            reci:[]
         }
     },
     props:[
@@ -34,8 +46,8 @@ export default {
     ],
     created(){
         this.oglasi = JSON.parse(localStorage.getItem("oglasi"))
+        this.reci = reci.find(rec=>rec.component == "Oglasi")
     }
-    
     
 }
 </script>

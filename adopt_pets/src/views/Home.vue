@@ -1,6 +1,12 @@
 <template>
 <div class="container">
     <div  class="row justify-content-sm-center justify-content-lg-start">
+      <nav class="breadcrumbs">
+        <router-link to="/">
+            {{this.reci["breadcrumbs"][0][props]}}
+        </router-link>
+      </nav>
+
       
         <div class="col-lg-6 col-sm-10  justify-content-center">
                   <div class="row  d-flex justify-content-sm-center justify-content-lg-start">

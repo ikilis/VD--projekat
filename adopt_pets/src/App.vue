@@ -19,6 +19,14 @@
 
 
 <style lang="less">
+.breadcrumbs {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: lightgray;
+  text-align: center;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
