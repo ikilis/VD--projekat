@@ -30,7 +30,7 @@
                 </li>
                 <li class="nav-item active">
                     <router-link class="nav-link" to="/">
-                      {{this.reci["ptice"][props]}}
+                      {{this.reci["macke"][props]}}
                     </router-link>
                 </li>
             </ul>
