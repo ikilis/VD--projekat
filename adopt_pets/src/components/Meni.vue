@@ -19,17 +19,17 @@
             </a>
             <ul class="dropdown-menu text-center text-lg-start" aria-labelledby="dropdownMenuButton1">
                 <li class="nav-item active">
-                    <router-link class="nav-link" to="/">
+                    <router-link class="nav-link" to="/zivotinje/psi">
                       {{this.reci["psi"][props]}}
                     </router-link>
                 </li>
                 <li class="nav-item active">
-                    <router-link class="nav-link" to="/">
+                    <router-link class="nav-link" to="/zivotinje/ptice">
                       {{this.reci["ptice"][props]}}
                     </router-link>
                 </li>
                 <li class="nav-item active">
-                    <router-link class="nav-link" to="/">
+                    <router-link class="nav-link" to="/zivotinje/macke">
                       {{this.reci["macke"][props]}}
                     </router-link>
                 </li>

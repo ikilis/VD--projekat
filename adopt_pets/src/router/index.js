@@ -6,7 +6,11 @@ import DodajOglas from "../components/DodajOglas.vue"
 import MojNalogOglasi from "../components/MojNalogOglasi.vue"
 import MojNalogKomentari from "../components/MojNalogKomentari.vue"
 import ONama from "../components/ONama.vue"
-
+import Zivotinje from "../components/Zivotinje.vue"
+import Macke from "../components/Macke.vue"
+import Psi from "../components/Psi.vue"
+import Ptice from "../components/Ptice.vue"
+import Ljubimac from "../components/Ljubimac.vue"
 
 const routes = [
   {
@@ -18,6 +22,31 @@ const routes = [
     path: '/onama',
     name: "O nama",
     component: ONama
+  },
+  {
+    path: '/zivotinje',
+    name: "Zivotinje",
+    component: Zivotinje
+  },
+  {
+    path: '/zivotinje/macke',
+    name: "Macke",
+    component: Macke
+  },
+  {
+    path: '/zivotinje/psi',
+    name: "Psi",
+    component: Psi
+  },
+{
+    path: '/zivotinje/ptice',
+    name: "Ptice",
+    component: Ptice
+  },
+{
+    path: '/zivotinje/:vrsta/:ime',
+    name: "Ljubimac",
+    component: Ljubimac
   },
   {
     path:"/oglasi",

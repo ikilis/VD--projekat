@@ -102,7 +102,49 @@ let reci =[
             "Контактирате нас на инстаграму, снепу, твитеру или пишите директно на наш мејл support@pets.com",
             "Contact us at snap, IG, twitter or write directly to our email support@pets.com"
         ]
+    },
+    {
+        component:"Zivotinje",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Zivotinje", "Pets"],
+        ],
+        naslov:["Zivotinje","Pets"]
+    },
+    {
+        component:"Macke",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Zivotinje", "Pets"],
+            ["Macke", "Cats"],
+        ],
+        naslov:["Macke","Cats"]
+    },
+    {
+        component:"Psi",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Zivotinje", "Pets"],
+            ["Psi", "Dogs"],
+        ],
+        naslov:["Psi","Dogs"]
+    },
+    {
+        component:"Ptice",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Zivotinje", "Pets"],
+            ["Ptice", "Birds"],
+        ],
+        naslov:["Ptice","Birds"]
+    },
+    {
+        component:"Ljubimac",
+        breadcrumbs: [
+            ["Pocetna", "Home"],
+            ["Zivotinje", "Pets"],
+        ],
+        naslov:["Ljubimac","Pet"]
     }
-
 ]
 export default reci

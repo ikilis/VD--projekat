@@ -23,7 +23,11 @@
   height: 50px;
   padding: 0;
   margin: 0;
-  background-color: lightgray;
+  // background-color: lightgray;
+  border-bottom: 1px gray solid;
+  border-top: 1px gray solid;
+  margin-bottom: 30px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -45,11 +49,16 @@ nav {
   a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px;
+    text-transform:capitalize;
 
     &.router-link-exact-active {
       color: #42b983;
     }
   }
+
 }
 </style>
 <script>
