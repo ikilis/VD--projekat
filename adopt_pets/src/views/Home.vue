@@ -1,14 +1,14 @@
 <template>
 <div class="container">
     <div  class="row justify-content-sm-center justify-content-lg-start">
-     <nav class="breadcrumbs m-0 p-0" style="max-height:5vh">
+     <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
         <router-link to="/">
             {{this.reci["breadcrumbs"][0][props]}}
         </router-link>
       </nav>
 
       
-        <div class="col-lg-6 col-sm-10  justify-content-center">
+        <div class="col-lg-7 col-sm-10  justify-content-center mx-4">
                   <div class="row  d-flex justify-content-sm-center justify-content-lg-start">
                       <div class="d-flex justify-content-sm-center justify-content-lg-between"><h1>{{this.reci["novosti"][props]}}</h1></div>
                       <!-- <br>
@@ -41,7 +41,7 @@
                   </div>
 
         </div>
-        <div class="col-lg-3 col-sm-12  d-flex justify-content-start">
+        <div class="col-lg-4 col-sm-12  d-flex justify-content-start">
           <div class="row  d-flex justify-content-center mt-4">
                   <h1>{{this.reci["pomoc"][props]}}</h1>
               <div v-for="oglas in this.oglasi" :key="oglas.id" class="row d-flex justify-content-center">
