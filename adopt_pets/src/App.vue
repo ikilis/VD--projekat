@@ -2,14 +2,14 @@
   <div class="fluid-container h-100 mx-0">
     <div class="d-flex row mx-0" style="max-width:100%">
       <div class="col-11 px-0 mx-0"><Meni :props="jezik"/></div>
-      <div class="col-1 bg-light px-0 mx-0 d-flex justify-content-end">
-        <div @click="promeniJezik()" class="align-self-start" style="width:50px">
+      <div id="jj" class="col-1  px-0 mx-0 d-flex justify-content-end">
+        <div id="jez" @click="promeniJezik()" class="align-self-start d-print-none" >
           <img id="zastave" alt="Срб/Eng" src="./assets/zastave.png" style="width:100%">
         </div>
       </div>
     </div>
 
-    <router-view class="w-100 p-3" style="min-height:78vh" :props="jezik" />
+    <router-view class="w-100 p-3 m-0 p-0" style="min-height:79vh" :props="jezik" />
     
     <MyFooter :props="jezik" />
   </div>
@@ -19,6 +19,14 @@
 
 
 <style lang="less">
+#jj{
+    background-color:#50C878;
+}
+#jez{
+  width:50px;
+  background-color:#50C878;
+}
+
 .breadcrumbs {
   height: 50px;
   padding: 0;
@@ -45,6 +53,7 @@
 
 nav {
   padding: 30px;
+  
 
   a {
     font-weight: bold;
@@ -72,15 +81,31 @@ export default {
   },
   data(){
     return{
-      jezik:0
+      jezik:""
     }
   },
   methods:{
     promeniJezik(){
       this.jezik = 1 - this.jezik
+      if(this.jezik == 0){
+         localStorage.setItem("jezik",JSON.stringify("srpski"))
+      }
+      else{
+        localStorage.setItem("jezik",JSON.stringify("engleski"))
+      }
     }
-  }
-  ,
+  },
+  created(){
+    if(localStorage.getItem("jezik") == null){
+      localStorage.setItem("jezik",JSON.stringify("srpski"))
+    }
+    let jezik = JSON.parse(localStorage.getItem("jezik"))
+    if(jezik == "srpski"){
+      this.jezik = 0
+    }else{
+      this.jezik = 1
+    }
+  },
   watch: {
         $route: {
             immediate: true,

@@ -1,6 +1,17 @@
 <template>
     
 <div class="row">
+        <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
+                <router-link to="/">
+                    {{this.reci["breadcrumbs"][0][props]}}
+                </router-link>
+                >
+                <router-link to="/mojiKomentari">
+                    {{this.reci["breadcrumbs"][1][props]}}
+                </router-link>
+        </nav>
+
+
         <div class="col-sm-2 bg-white">
             <MojNalogNavigation :props="this.props" />
         </div>
@@ -17,6 +28,7 @@
 </template>
 
 <script>
+import reci from '../data/jezici.js'
 import MojNalogNavigation from "./MojNalogNavigation.vue"
 export default {
     name:"MojNalogKomentari",
@@ -25,13 +37,16 @@ export default {
     },
     data(){
         return{
-            mojiKomentari:[]
+            mojiKomentari:[],
+            reci:[]
         }
     },
     props:[
         "props"
     ],
     created(){
+        this.reci = reci.find(rec=>rec.component == "MojNalogKomentari")
+
         let sviOglasi =JSON.parse(localStorage.getItem("oglasi"))
         let mojeIme = JSON.parse(localStorage.getItem("trenutniKorisnik")).username
 

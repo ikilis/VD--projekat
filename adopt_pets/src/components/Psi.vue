@@ -2,7 +2,7 @@
 
 
 <div class="row">
-      <nav class="breadcrumbs">
+      <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
         <router-link to="/">
             {{this.reci["breadcrumbs"][0][props]}}
         </router-link>
@@ -24,8 +24,11 @@
                     <li>
                          <router-link  to="/zivotinje/psi" class="nav-link px-0 align-middle  text-secondary">
                             <i class="fs-4 bi-people"></i>
-                            <span class="ms-1 d-none d-sm-inline">
-                                Psi
+                            <span v-if="this.props==0" class="ms-1 d-none d-sm-inline">
+                                Пси
+                            </span> 
+                            <span v-if="this.props==1" class="ms-1 d-none d-sm-inline">
+                                Dogs
                             </span> 
                             </router-link>
                     </li>
@@ -33,67 +36,94 @@
                     <li>
                         <router-link to="/zivotinje/macke" class="nav-link px-0 align-middle text-secondary">
                             <i class="fs-4 bi-people"></i> 
-                            <span class="ms-1 d-none d-sm-inline">Macke</span>
+                            <span v-if="this.props==0" class="ms-1 d-none d-sm-inline">
+                                Мачке
+                            </span> 
+                            <span v-if="this.props==1" class="ms-1 d-none d-sm-inline">
+                                Cats
+                            </span> 
                              </router-link>
                     </li>
 
                     <li>
                         <router-link to="/zivotinje/ptice" class="nav-link px-0 align-middle text-secondary">
                             <i class="fs-4 bi-people"></i> 
-                            <span class="ms-1 d-none d-sm-inline">Ptice</span>
+                            <span v-if="this.props==0" class="ms-1 d-none d-sm-inline">
+                                Птице
+                            </span> 
+                            <span v-if="this.props==1" class="ms-1 d-none d-sm-inline">
+                                Birds
+                            </span> 
                              </router-link>
-                    </li>
-                
+                    </li>      
                 </ul>
                 </div>
-
-
-
             </div>
 
                     
             <div class="col-sm-6 ms-4 row">
 
-            <div class="col-6 col-md-4 d-flex align-items-stretch" style="max-height:600px;">
+            <div class="col-sm-12 col-md-4 d-flex align-items-stretch" style="max-height:600px;">
                 <div class="card hoverable-link-card w-80 h-80">
                     <img class="card-img-top" src="../assets/psi/aca.jpg">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Aca</h3>
-                        <p class="card-text">
-                        Aca je najbolji ljubimac.
+                        <p v-if="this.props==0" class="card-text">
+                        Ana je najbolji ljubimac.
                         </p>
-                        <router-link class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/aca">
-                        Poseti
+                        <p v-if="this.props==1" class="card-text">
+                        Ana is the best cat
+                        </p>
+                         <p class="card-text">51</p>
+                        <router-link v-if="this.props==0" class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/aca">
+                        Посети
+                        </router-link>
+                        <router-link v-if="this.props==1" class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/aca">
+                        Visit
                         </router-link>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 d-flex align-items-stretch" style="max-height:600px;">
+            <div class="col-sm-12 col-md-4 d-flex align-items-stretch" style="max-height:600px;">
                 <div class="card hoverable-link-card w-80 h-80">
                     <img class="card-img-top" src="../assets/psi/bokica.jpg">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Bokica</h3>
-                        <p class="card-text">
+                        <p v-if="this.props==0" class="card-text">
                         Bokica je najbolji ljubimac.
                         </p>
-                        <router-link class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/bokica">
-                        Poseti
+                        <p v-if="this.props==1" class="card-text">
+                        Bokica is actuallt the best doggo
+                        </p>
+                         <p class="card-text">12</p>
+                        <router-link v-if="this.props==0" class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/bokica">
+                        Посети
+                        </router-link>
+                        <router-link v-if="this.props==1" class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/bokica">
+                        Visit
                         </router-link>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 d-flex align-items-stretch" style="max-height:600px;">
+            <div class="col-sm-12 col-md-4 d-flex align-items-stretch" style="max-height:600px;">
                 <div class="card hoverable-link-card w-80 h-80">
                     <img class="card-img-top" src="../assets/psi/cobi.jpg">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Cobi</h3>
-                        <p class="card-text">
-                        Cobi je najbolji ljubimac.
+                        <p v-if="this.props==0" class="card-text">
+                        Cobi nije najbolji ljubimac.
                         </p>
-                        <router-link class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/cobi">
-                        Poseti
+                        <p v-if="this.props==1" class="card-text">
+                        Cobi is the worst
+                        </p>
+                         <p class="card-text">7</p>
+                        <router-link v-if="this.props==0" class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/cobi">
+                        Посети
+                        </router-link>
+                         <router-link v-if="this.props==1" class="btn btn-success go-to-button mt-auto" to="/zivotinje/psi/cobi">
+                        Visit
                         </router-link>
                     </div>
                 </div>

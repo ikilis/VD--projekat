@@ -1,14 +1,14 @@
 <template>
-      <nav class="breadcrumbs">
-        <router-link to="/">
-            {{this.reci["breadcrumbs"][0][props]}}
-        </router-link>
-        >
-        <router-link to="/oglasi">
-            {{this.reci["breadcrumbs"][1][props]}}
-        </router-link>
-      </nav>
     <div class="container">
+               <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
+                <router-link to="/">
+                    {{this.reci["breadcrumbs"][0][props]}}
+                </router-link>
+                >
+                <router-link to="/oglasi">
+                    {{this.reci["breadcrumbs"][1][props]}}
+                </router-link>
+            </nav>
 
     <div id="oglasi" class="row justify-content-center">
         <OglasStavka

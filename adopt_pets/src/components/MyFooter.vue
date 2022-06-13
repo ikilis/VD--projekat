@@ -1,5 +1,5 @@
 <template> 
-  <div class="footer text-bottom"> 
+  <div class="footer text-bottom d-print-none"> 
       <hr />
     {{this.reci["opis"][props]}}
   </div> 
@@ -27,3 +27,4 @@ export default {
     }
 }
 </script>
+

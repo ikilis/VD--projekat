@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div  class="row justify-content-sm-center justify-content-lg-start">
-      <nav class="breadcrumbs">
+     <nav class="breadcrumbs m-0 p-0" style="max-height:5vh">
         <router-link to="/">
             {{this.reci["breadcrumbs"][0][props]}}
         </router-link>

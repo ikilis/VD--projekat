@@ -1,10 +1,10 @@
 <template>
-<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav id="nav" class="navbar navbar-expand-lg  d-print-none">
   
    <router-link class="navbar-brand" to="/">
        <img id="logoSajta" alt="Vue logo" src="../assets/sape2.png">
     </router-link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button style="background-color:#348781" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -89,16 +89,21 @@ export default {
 }
 </script>
 <style scoped>
+nav{
+    background-color: #50C878;
+}
+
 #logoSajta{
   height: 50px;
   width: 80px;
 }
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #2c3e50; 
 }
 
+
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: black;
 }
 </style>

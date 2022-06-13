@@ -10,10 +10,12 @@
             <br>
 
             {{this.reci["kontakt"][props]}}: {{myOglas.kontakt}}
+            <br>
+            <button type="button"  @click="printuj()" class="btn btn-success d-print-none">{{this.reci["printuj"][props]}}</button>
 
         </div>
     </div>
-    <div class="row justify-content-center ">
+    <div class="row justify-content-center d-print-none">
             <div id="komentari" class="col-lg-6 col-sm-12 align-self-start justify-content-center pt-2 my-4 border">
 
                 <form class="align-self-center text-start needs-validation" @submit.prevent="postaviKomentar()">
@@ -21,7 +23,7 @@
                     <input v-model="komentar" type="text" class="form-control" 
                     v-bind:placeholder="this.reci.komentarPlaceHolder[props]"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button type="submit" class="btn btn-outline-secondary" value="Postavi" id="button-addon2"> {{this.reci["dugme"][props]}} </button>
+                    <button type="submit" class="btn " style="background-color:#50C878" value="Postavi" id="button-addon2"> {{this.reci["dugme"][props]}} </button>
                     </div>
                     
                 </form>
@@ -88,11 +90,10 @@ p{
                 localStorage.setItem("oglasi", JSON.stringify(this.sviOglasi))
                 this.komentar=""
             }
-            // ,
-            // downloadItem(oglas){
-            //         console.log(oglas)
-            //         window.open(oglas)
-            // }
+            ,
+            printuj(){
+                    print()
+            }
         }
     }
 

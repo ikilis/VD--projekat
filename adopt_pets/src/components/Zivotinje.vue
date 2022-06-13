@@ -2,7 +2,7 @@
 
 
 <div class="row">
-      <nav class="breadcrumbs">
+      <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
         <router-link to="/">
             {{this.reci["breadcrumbs"][0][props]}}
         </router-link>
@@ -14,8 +14,8 @@
 
 
         <div class="col-sm-2 bg-white">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 border-end" style="max-width:200px;">
-                kurac
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-50 border-end" style="max-width:200px;">
+                <!-- kurac -->
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
 
                     <li>

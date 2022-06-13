@@ -1,8 +1,8 @@
 <template>
 
 
-<div class="row">
-      <nav class="breadcrumbs">
+<div class="row p-0 m-0">
+      <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
         <router-link to="/">
             {{this.reci["breadcrumbs"][0][props]}}
         </router-link>

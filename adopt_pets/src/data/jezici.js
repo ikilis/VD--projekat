@@ -15,8 +15,8 @@ let reci =[
     {
         component: "DodajOglas",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Dodaj oglas", "Add post"],
+            ["Почетна", "Home"],
+            ["Додај оглас", "Add post"],
         ],
         greskaNaziv:["Назив је обавезан","Title is required"],
         greskaOpis:["Опис је обавезан","Description is required"],
@@ -32,20 +32,28 @@ let reci =[
         opis:["Опис","Description"],
         kontakt:["Молимо контактирајте","Please contact"],
         komentarPlaceHolder: ["Оставите Ваш коментар","Leave comment"],
-        dugme:["Додај","Add"]
+        dugme:["Додај","Add"],
+        printuj:["Преузми", "Download"]
     },
     {
         component: "MojNalogOglasi",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Moji oglasi", "My posts"],
+            ["Почетна", "Home"],
+            ["Моји Огласи", "My posts"],
+        ],
+    },
+    {
+        component: "MojNalogKomentari",
+        breadcrumbs: [
+            ["Почетна", "Home"],
+            ["Моји Коментари", "My comments"],
         ],
     },
     {
         component: "Oglasi",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Oglasi", "Posts"],
+            ["Почетна", "Home"],
+            ["Огласи", "Posts"],
         ],
     },
     {
@@ -55,8 +63,8 @@ let reci =[
     },
     {
         component: "MyFooter",
-        opis:["Copyright 2022, Савић Иван, Одсек за софтверско инжењерство Електротехничког факултета Универзитета у Београду",
-        "Copyright 2022, Savic Ivan, Software Engeneering School of Electrical Engeneering, University of Belgrade"]
+        opis:["Copyright 2022, Савић Иван Миљан Марковић, Одсек за софтверско инжењерство Електротехничког факултета Универзитета у Београду",
+        "Copyright 2022, Savic Ivan & Miljan Markovic, Software Engeneering School of Electrical Engeneering, University of Belgrade"]
     },
     {
         component: "OglasStavka",
@@ -66,7 +74,7 @@ let reci =[
     {
         component: "Pocetna",
         breadcrumbs: [
-            ["Pocetna", "Home"],
+            ["Почетна", "Home"],
         ],
         novosti:["Новости ","News"],
         info:["више инфо","more info"],
@@ -88,8 +96,8 @@ let reci =[
     {
         component:"ONama",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["O nama", "About us"],
+            ["Почетна", "Home"],
+            ["О нама", "About us"],
         ],
         naslov:["Сазнај више о нама","Get to know us"],
         levaKolona:[
@@ -106,45 +114,45 @@ let reci =[
     {
         component:"Zivotinje",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Zivotinje", "Pets"],
+            ["Почетна", "Home"],
+            ["Животиње", "Pets"],
         ],
-        naslov:["Zivotinje","Pets"]
+        naslov:["Животиње","Pets"]
     },
     {
         component:"Macke",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Zivotinje", "Pets"],
-            ["Macke", "Cats"],
+            ["Почетна", "Home"],
+            ["Животиње", "Pets"],
+            ["Мачке", "Cats"],
         ],
-        naslov:["Macke","Cats"]
+        naslov:["Мачке","Cats"]
     },
     {
         component:"Psi",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Zivotinje", "Pets"],
-            ["Psi", "Dogs"],
+            ["Почетна", "Home"],
+            ["Животиње", "Pets"],
+            ["Пси", "Dogs"],
         ],
-        naslov:["Psi","Dogs"]
+        naslov:["Пси","Dogs"]
     },
     {
         component:"Ptice",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Zivotinje", "Pets"],
-            ["Ptice", "Birds"],
+            ["Почетна", "Home"],
+            ["Животиње", "Pets"],
+            ["Птице", "Birds"],
         ],
-        naslov:["Ptice","Birds"]
+        naslov:["Птице","Birds"]
     },
     {
         component:"Ljubimac",
         breadcrumbs: [
-            ["Pocetna", "Home"],
-            ["Zivotinje", "Pets"],
+            ["Почетна", "Home"],
+            ["Животиње", "Pets"],
         ],
-        naslov:["Ljubimac","Pet"]
+        naslov:["Љубимац","Pet"]
     }
 ]
 export default reci

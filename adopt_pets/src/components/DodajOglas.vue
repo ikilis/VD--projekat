@@ -2,7 +2,7 @@
 
 <div class="row justify-content-center">
 
-      <nav class="breadcrumbs">
+      <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
         <router-link to="/">
             {{this.reci["breadcrumbs"][0][props]}}
         </router-link>
@@ -38,7 +38,7 @@
                     <input type="text" class="form-control" id="exampleInputEmail1" v-bind:placeholder="this.reci.brojPlaceHolder[props]" 
                     v-model="kontakt" aria-describedby="emailHelp" >
                 </div>
-                <button type="submit" class="btn btn-primary">{{this.reci["postavi"][props]}}</button>
+                <button  type="submit" class="btn" style="background-color:#50C878">{{this.reci["postavi"][props]}}</button>
             </form>
         </div>
     </div>

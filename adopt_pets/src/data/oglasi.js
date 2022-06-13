@@ -4,7 +4,7 @@ const  sviOglasi = [
         username: "ikiliki",
         naziv: "nestao pas 5",
         opis:"volim svog psa 5",
-        kontakt: "+381 614188999",
+        kontakt: "0987654321",
         datum: "08-19-2021",
         comments: [
             {
@@ -24,7 +24,7 @@ const  sviOglasi = [
         username: "username",
         naziv: "nestao pas 4",
         opis:"volim svog psa 4",
-        kontakt: "+381 614188999",
+        kontakt: "0987654321",
         datum: "08-19-2021",
         comments: [
             {
@@ -44,7 +44,7 @@ const  sviOglasi = [
         username: "username",
         naziv: "nestao pas 3",
         opis:"volim svog psa 3",
-        kontakt: "+381 614188999",
+        kontakt: "0987654321",
         datum: "08-19-2021",
         comments: [
             {
@@ -64,7 +64,7 @@ const  sviOglasi = [
         username: "username",
         naziv: "nestao pas 2",
         opis:"volim svog psa 2",
-        kontakt: "+381 614188999",
+        kontakt: "0987654321",
         datum: "08-19-2021",
         comments: [
             {
@@ -84,7 +84,7 @@ const  sviOglasi = [
         username: "username",
         naziv: "nestao pas 2",
         opis:"volim svog psa 2",
-        kontakt: "+381 614188999",
+        kontakt: "0987654321",
         datum: "08-19-2021",
         comments: [
             {
