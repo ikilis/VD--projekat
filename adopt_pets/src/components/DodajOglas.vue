@@ -2,7 +2,7 @@
 
 <div class="row justify-content-center">
 
-      <nav class="breadcrumbs m-0 p-0" style="max-height:7vh">
+      <nav class="breadcrumbs mb-2 p-0" style="max-height:7vh">
         <router-link to="/">
             {{this.reci["breadcrumbs"][0][props]}}
         </router-link>
