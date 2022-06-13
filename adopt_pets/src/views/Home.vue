@@ -49,7 +49,7 @@
                     <div class="text-center py-2 px-4 my-1 border">
                           <b>{{oglas.naziv}}</b>
                           <br>
-                      <router-link :to="/oglas/+oglas.id" class="link-info">viseInfo</router-link>
+                      <router-link :to="/oglas/+oglas.id" class="link-info">{{this.reci["info"][props]}}</router-link>
                     </div>
             </div>
           </div>
